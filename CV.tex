@@ -1,20 +1,11 @@
-% article class because we want to fully customize the page and not use a cv template
-\documentclass[a4paper,12pt]{article}
+\documentclass[a4paper,10pt]{article}
 
 % ----------------------------------------------------------------------------------------
 %	FONT
 % ----------------------------------------------------------------------------------------
 
-% % fontspec allows you to use TTF/OTF fonts directly
+% fontspec allows you to use TTF/OTF fonts directly
 % \usepackage{fontspec}
-% \defaultfontfeatures{Ligatures=TeX}
-% % modified for ShareLaTeX use
-% \setmainfont[
-% SmallCapsFont = Fontin-SmallCaps.otf,
-% BoldFont = Fontin-Bold.otf,
-% ItalicFont = Fontin-Italic.otf
-% ]
-% {Fontin.otf}
 
 % ----------------------------------------------------------------------------------------
 %	PACKAGES
@@ -23,8 +14,6 @@
 \usepackage{parskip}
 
 % other packages for formatting
-\RequirePackage{color}
-\RequirePackage{graphicx}
 \usepackage[usenames,dvipsnames]{xcolor}
 \usepackage[scale=0.9]{geometry}
 
@@ -54,13 +43,20 @@
 \titlespacing{\section}{0pt}{10pt}{10pt}
 
 % for publications
-\usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
+\usepackage[sorting=ydnt, minnames=2,maxnames=2]{biblatex}
 
 % Setup hyperref package, and colours for links
-\usepackage[unicode, draft=false]{hyperref}
 \definecolor{linkcolour}{rgb}{0,0.2,0.6}
-\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
-%\addbibresource{citations.bib}
+
+\usepackage[pdfauthor=Jimmy Aguilar Mena,
+            pdftitle={CV Jimmy Aguilar Mena},
+            pdfsubject={Curriculum Vitae},
+            colorlinks,
+            breaklinks,
+            urlcolor=linkcolour,
+            linkcolor=linkcolour
+            ]{hyperref}
+\hypersetup{}
 \setlength\bibitemsep{1em}
 
 % for social icons
@@ -84,6 +80,7 @@
 \begin{tabularx}{\linewidth}{@{} C @{}}
     \Huge{Jimmy Aguilar Mena} \\[7.5pt]
     \href{https://github.com/Ergus}{\raisebox{-0.05\height}\faGithub\ Ergus} \ $|$ \
+    \href{https://scholar.google.es/citations?user=f_W11w8AAAAJ\&hl=es}{\raisebox{-0.05\height}\faGraduationCap\ Jimmy Aguilar Mena} \ $|$ \
     \href{https://https://www.linkedin.com/in/jimmy-aguilar-mena-237063167/}{\raisebox{-0.05\height}\faLinkedin\ Jimmy Aguilar Mena} \ $|$ \
     \href{mailto:kratsbinovish@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ kratsbinovish@gmail.com} \ $|$ \
     \href{tel:+34611494825}{\raisebox{-0.05\height}\faMobile \ +34.611.494.825} \\
@@ -96,45 +93,49 @@
 % Interests/ Keywords/ Summary
 \section{Summary}
 High Performance Computing Research Engineer with more than 10 years
-developing parallel applications with C/C++/Fortran/Python. Interested
-in new technologies, challenging architectures, frameworks and
-systems.
+developing parallel applications. Interested in new technologies,
+challenging architectures, frameworks and systems.
 
 % Experience
 \section{Work Experience}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
-    \textbf{PhD Student \& Research Engineer} & \hfill 2017 - present \\[3.75pt]
-    \multicolumn{2}{@{}X@{}}{
-      \begin{minipage}[t]{\linewidth}
-          \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
-              \item[--] Parallel Runtime System Development (\href{https://github.com/bsc-pm/nanos6-cluster}{Nanos6@Cluster})
-              \item[--] Hybrid Parallel Programming (multiprocess, multithreading, task)
-              \item[--] Parallel Application Profile, Analysis, Instrumentation and Optimization
-              \item[--] Inter language programming (C/C++/Fortran/Python)
-              \item[--] System aware application development (hwloc, Slurm API, Numa, POSIX)
-              \item[--] Participation in multiple international projects:
-                  \href{https://www.deep-projects.eu/}{DEEP+SEA},
-                  \href{https://euroexa.eu/}{EuroEXA},
-                  \href{https://legato-project.eu/}{LeGaTo},
-                  \href{https://exanode.eu/}{ExaNoDe}
-          \end{itemize}
-      \end{minipage}
-    }
+  \textbf{Research Engineer \& PhD Student} & \hfill 2017 - present \\
+
+  \multicolumn{2}{@{}X@{}}{
+  \begin{minipage}[t]{\linewidth}
+      Department of Computer Sciences--Microserver architectures and system software.
+      Barcelona Supercomputing Center (\href{https://www.bsc.es/}{BSC})
+
+      \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+          \item[--] Parallel Runtime System Development (\href{https://github.com/bsc-pm/nanos6-cluster}{Nanos6@Cluster})
+          \item[--] Hybrid Parallel Programming (shared and distributed memory, multiprocess, multithreading, task programming model)
+          \item[--] Parallel Application Profile, Analysis, Instrumentation and Optimization
+          \item[--] Language interoperability programming (C/C++/Fortran/Python)
+          \item[--] System aware application development (hwloc, Slurm API, Numa, POSIX, jemalloc)
+          \item[--] Participation in international projects:
+              \href{https://www.deep-projects.eu/}{DEEP-SEA},
+              \href{https://euroexa.eu/}{EuroEXA},
+              \href{https://legato-project.eu/}{LeGaTo},
+              \href{https://exanode.eu/}{ExaNoDe}
+      \end{itemize}
+  \end{minipage}
+  }
 \end{tabularx}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
-    \textbf{Assistant professor} & \hfill 2011 - 2014 \\[3.75pt]
+    \textbf{Assistant professor of Numerical Methods and Elemental Physics} & \hfill 2011 - 2014 \\[3.75pt]
     \multicolumn{2}{@{}X@{}}{
       \begin{minipage}[t]{\linewidth}
           \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
-              \item[--] Theory of: Differential equations and Numerical methods
-              \item[--] Python: (\href{https://numpy.org/}{numpy},
-                  \href{https://matplotlib.org/}{matplotlib},
-                  \href{https://scipy.org/}{scipy})
-              \item[--] C++: (\href{https://root.cern/}{ROOT},
-                  \href{https://netlib.org/lapack/}{BLAS/Lapack}
-                  \href{https://www.gnu.org/software/gsl/}{GSL})
+              \item[--] Differential equations, Numerical methods and Physics II (Thermodynamics \& Electromagnetism)
+              \item[--] Python (\href{https://numpy.org/}{numpy},
+                  	\href{https://matplotlib.org/}{matplotlib},
+                  	\href{https://scipy.org/}{scipy}),
+                  C++ (\href{https://netlib.org/lapack/}{BLAS/Lapack},
+                  	\href{https://www.gnu.org/software/gsl/}{GSL}),
+                  \href{https://octave.org/}{Octave},
+                  \href{https://maxima.sourceforge.io/}{Maxima}
           \end{itemize}
       \end{minipage}
     }
@@ -145,27 +146,74 @@ systems.
 % ----------------------------------------------------------------------------------------
 \section{Education}
 \begin{tabularx}{\linewidth}{@{}l X@{}}
-    2017--present & \textbf{PhD on Computers Architecture} (\href{https://www.ac.upc.edu/en/academics/ph-d/ph-d-programme-by-computer-architecture}{[Link]})
-    Universitat Polit\`ecnica de Catalunya (\href{https://www.upc.edu/en}{UPC}) \\
+  2017--2022 & \textbf{PhD on Computers Architecture}
+               \href{https://www.ac.upc.edu/en/academics/ph-d/ph-d-programme-by-computer-architecture}{[Link]}
 
-    2014--2017 & \textbf{Master Degree on High Performance Computing (MHPC)} (\href{http://www.mhpc.it}{Link})
-    Scuola Internazionale Superiore di Studi Avanzati (\href{https://www.sissa.it/}{SISSA}),
-    International Center for Theoretical Physics (\href{https://www.ictp.it/}{ICTP}).
-    Trieste, Italy
+               Universitat Polit\`ecnica de Catalunya (\href{https://www.upc.edu/en}{UPC}).
+               Barcelona, Spain
 
-    \textbf{Master thesis:} Enablement of a massive parallelism to
-    study the role of disorder spatial correlations and anisotropies
-    on the Anderson localization phenomenon.
-    \href{https://backend.mhpc.sissa.it/sites/default/files/2021-02/JimmyAguilarMena.pdf}{Link}
+               \textbf{Thesis:} Methodology for malleable applications on distributed memory systems.
+               \href{http://paul-carpenter.org/aguilar2022thesis.pdf}{[Link]}
 
-    Parallel programming, HPC technologies, Numerical Analysis, Monte
-    Carlo Methods, Advanced Computer Architectures and Optimization,
-    Parallel Linear Algebra
-    \\
+               \textbf{Brief description:} Extended the \href{https://pm.bsc.es/ompss-2}{OmpSs-2} task based programming model to
+               work on distributed memory systems: \href{https://github.com/bsc-pm/ompss-2-cluster-releases}{OmpSs-2@Cluster}
+               a runtime and model with malleability and load balancing features.
+  \\
 
-    2012--2014 & Master Degree on Nuclear Physics at Higher Institute of Technologies and Applied Sciences (\href{www.instec.cu}{InSTEC}). La Havana, Cuba \\
+  2015 & \textbf{CERN Openlab Summer Student} \href{https://home.cern/science/computing/cern-openlab}{[Link]}
 
-    2006--2011 & Bachelor's Degree on Nuclear Physics at Higher Institute of Technologies and Applied Sciences (\href{www.instec.cu}{InSTEC}). La Havana, Cuba \\
+         European Organization for Nuclear Research (\href{https://home.cern/}{CERN}).
+         Geneve, Switzerland.
+
+         \textbf{Work:} Kalman Filter improves using GPGPU and auto-vectorization for Online LHCb Triggers.
+         \href{https://zenodo.org/record/31869}{[Link]}
+
+         \textbf{Brief description:} Modify a section of the Gaudi simulator to optimize the first line
+         of the filter algorithm in intense data flows conditions using \href{https://www.khronos.org/opencl/}{OpenCL},
+         \href{https://developer.nvidia.com/cuda-zone}{Cuda} and auto-vectorization techniques.
+  \\
+
+  2014--2017 & \textbf{Master Degree on High Performance Computing (MHPC)} \href{http://www.mhpc.it}{[Link]}
+
+               Scuola Internazionale Superiore di Studi Avanzati (\href{https://www.sissa.it/}{SISSA}),
+               International Center for Theoretical Physics (\href{https://www.ictp.it/}{ICTP}).
+               Trieste, Italy
+
+               Parallel programming, HPC technologies, Numerical Analysis, Monte
+               Carlo Methods, Advanced Computer Architectures and Optimization,
+               Parallel Linear Algebra
+
+               \textbf{Thesis:} Enablement of a massive parallelism to study the role of disorder
+               spatial correlations and anisotropies on the Anderson localization phenomenon.
+               \href{https://backend.mhpc.sissa.it/sites/default/files/2021-02/JimmyAguilarMena.pdf}{[Link]}
+
+               \textbf{Brief description:} Implement an hybrid master-slave system that exploits efficiently
+               the hardware capabilities using MPI, pthreads and GPGPU programming while it offers
+               simplified api and interface.
+  \\
+
+  2012--2014 & \textbf{Master Degree on Nuclear Physics}
+
+               Higher Institute of Technologies and Applied Sciences (\href{www.instec.cu}{InSTEC}).
+               La Havana, Cuba
+
+               Advanced Statistics, Monte Carlo Methods, Big data analysis, Nuclear reactions, Nucleus Theory
+
+               \textbf{Thesis:} Implementing a model for secondary electron emission in Geant4 to
+               simulate neutron radiography with micro-channel plates.
+
+               \textbf{Brief description:} Implement a new physical model to the
+               \href{https://geant4.web.cern.ch/}{Geant4} framework optimized with multi-threading
+               and auto-vectorization. Use \href{https://root.cern/}{ROOT} and
+               \href{https://www.r-project.org/}{R} to automatize processing the big amount of
+               generated data.
+  \\
+
+  2006--2011 & \textbf{Bachelor Degree on Nuclear Physics}
+
+               Higher Institute of Technologies and Applied Sciences (\href{www.instec.cu}{InSTEC}).
+               La Havana, Cuba
+  \\
 \end{tabularx}
 
 % ----------------------------------------------------------------------------------------
@@ -182,11 +230,20 @@ systems.
 % ----------------------------------------------------------------------------------------
 \section{Skills}
 \begin{tabularx}{\linewidth}{@{}l X@{}}
-    Some Skills &  \normalsize{This, That, Some of this and that etc.}\\
-    Some More Skills  &  \normalsize{Also some more of this, Some more that, And some of this and that etc.}\\
+  Language & Spanish (Native), English (C1), Italian (B1), Catalan (B1)\\
+  Programming & Intermediate-Advanced: C, C++, Fortran, Python, Bash, Pascal, Cuda, OpenCL,
+                PHP, Java, Lisp \\
+           & Basic-Intermediate: Rust, C\#, Visual Basic, SQL (PostgreSQL, MariaDB, SQLite) \\
+  Frameworks/Technologies & Intermediate-Advanced: OpenMP, MPI, OmpSs-2, Numa, Qt4 and Qt5,
+                            Perf (PAPI), gdb, valgrind, git, Autotools, CMake/CTest/CPack \\
+           & Basic-Intermediate: Github Actions, Travis, grpc, GoogleTest, Arduino.
 \end{tabularx}
 
 \vfill
 \center{\footnotesize Last updated: \today}
 
 \end{document}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
