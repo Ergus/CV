@@ -13,7 +13,7 @@ jobs:
           root_file: CV.tex
           compiler: pdflatex
           args: -interaction=nonstopmode -shell-escape
-      - name: bibtex CV
+      - name: biber CV
         uses: dante-ev/latex-action@latest
         with:
           root_file: CV
