@@ -2,6 +2,7 @@
 
 !Readme.md
 !.gitignore
+!.github
 !Makefile
 !*.tex
 !*.bib
