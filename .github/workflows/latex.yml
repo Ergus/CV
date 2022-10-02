@@ -1,0 +1,32 @@
+name: Build LaTeX CV
+on: [push]
+
+jobs:
+  build_latex:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v2
+      - name: pdflatex CV
+        uses: dante-ev/latex-action@latest
+        with:
+          root_file: CV.tex
+          compiler: pdflatex
+          args: -interaction=nonstopmode -shell-escape
+      - name: bibtex CV
+        uses: dante-ev/latex-action@latest
+        with:
+          root_file: CV
+          compiler: biber
+          args:
+      - name: pdflatex CV
+        uses: dante-ev/latex-action@latest
+        with:
+          root_file: CV.tex
+          compiler: pdflatex
+          args: -interaction=nonstopmode -shell-escape
+      - name: Upload
+        uses: actions/upload-artifact@v1
+        with:
+          name: CV
+          path: CV.pdf
