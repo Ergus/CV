@@ -1,11 +1,13 @@
-\documentclass[a4paper,10pt]{article}
+\documentclass[a4paper,11pt]{article}
 
 % ----------------------------------------------------------------------------------------
 %	FONT
 % ----------------------------------------------------------------------------------------
 
 % fontspec allows you to use TTF/OTF fonts directly
-% \usepackage{fontspec}
+\usepackage{fontspec}
+\setmainfont{Nimbus Sans}
+
 
 % ----------------------------------------------------------------------------------------
 %	PACKAGES
@@ -80,8 +82,8 @@
 \begin{tabularx}{\linewidth}{@{} C @{}}
     \Huge{Jimmy Aguilar Mena} \\[7.5pt]
     \href{https://github.com/Ergus}{\raisebox{-0.05\height}\faGithub\ Ergus} \ $|$ \
-    \href{https://scholar.google.es/citations?user=f_W11w8AAAAJ\&hl=es}{\raisebox{-0.05\height}\faGraduationCap\ Jimmy Aguilar Mena} \ $|$ \
     \href{https://https://www.linkedin.com/in/jimmy-aguilar-mena-237063167/}{\raisebox{-0.05\height}\faLinkedin\ Jimmy Aguilar Mena} \ $|$ \
+    %\href{https://scholar.google.es/citations?user=f_W11w8AAAAJ\&hl=es}{\raisebox{-0.05\height}\faGraduationCap\ Jimmy Aguilar Mena} \ $|$ \
     \href{mailto:kratsbinovish@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ kratsbinovish@gmail.com} \ $|$ \
     \href{tel:+34611494825}{\raisebox{-0.05\height}\faMobile \ +34.611.494.825} \\
 \end{tabularx}
@@ -91,8 +93,8 @@
 % Interests/ Keywords/ Summary
 \section{Summary}
 High Performance Computing Research Engineer with more than 10 years
-developing parallel applications. Interested in new technologies,
-challenging architectures, frameworks and systems.
+developing hybrid parallel applications on multiple parallel
+architectures.
 
 % ----------------------------------------------------------------------------------------
 \section{Work Experience}
@@ -107,7 +109,7 @@ challenging architectures, frameworks and systems.
 
       \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
           \item[--] Parallel Runtime System Development (\href{https://github.com/bsc-pm/nanos6-cluster}{Nanos6@Cluster})
-          \item[--] Hybrid Parallel Programming (shared and distributed memory, multiprocess, multithreading, task programming model)
+          \item[--] Hybrid Parallel Programming (distributed/shared memory, multiprocess, multithreading, task model)
           \item[--] Parallel Application Profile, Analysis, Instrumentation and Optimization
           \item[--] Language interoperability programming (C/C++/Fortran/Python)
           \item[--] System aware application development (hwloc, Slurm API, Numa, POSIX, jemalloc)
@@ -187,7 +189,9 @@ challenging architectures, frameworks and systems.
                the hardware capabilities using MPI, pthreads and GPGPU programming while it offers
                simplified api and interface.
   \\
+\end{tabularx}
 
+\begin{tabularx}{\linewidth}{@{}l X@{}}
   2012--2014 & \textbf{Master Degree on Nuclear Physics}
 
                Higher Institute of Technologies and Applied Sciences (\href{www.instec.cu}{InSTEC}).
@@ -204,7 +208,6 @@ challenging architectures, frameworks and systems.
                \href{https://www.r-project.org/}{R} to automatize processing the big amount of
                generated data.
   \\
-
   2006--2011 & \textbf{Bachelor Degree on Nuclear Physics}
 
                Higher Institute of Technologies and Applied Sciences (\href{www.instec.cu}{InSTEC}).
@@ -220,28 +223,34 @@ challenging architectures, frameworks and systems.
 \section{Skills}
 \begin{tabularx}{\linewidth}{@{}l X@{}}
   Language & Spanish (Native), English (Advanced), Italian (Basic), Catalan (Basic)\\
-  Programming & Advanced: C, C++, Fortran, Python, Bash,
-                Pascal, Cuda, OpenCL, PHP, Lisp
+  Programming & Advanced: Bash, C, C++, Fortran, Lisp, Pascal, PHP, Python
 
-                Basic-Intermediate: Rust, C\#, Java, Visual Basic, Perl, SQL  \\
+                Basic-Intermediate: C\#, Java, Perl, Rust, SQL, Visual Basic  \\
 
-  Other Technologies & Advanced: \href{https://www.openmp.org/}{OpenMP},
-                       \href{https://www.mpi-forum.org/}{MPI},
-                       \href{https://pm.bsc.es/ompss-2}{OmpSs-2},
-                       \href{https://www.kernel.org/doc/html/v4.19/vm/numa.html}{Numa},
-                       \href{https://www.qt.io/}{Qt}, \href{https://perf.wiki.kernel.org/index.php/Main_Page}{Perf}
-                       (\href{https://icl.utk.edu/papi/}{PAPI}),
-                       \href{https://slurm.schedmd.com/}{slurm},
+  Other Technologies & Advanced:
+                       Autotools,
+                       \href{https://cmake.org/}{CMake}/CTest/CPack,
+                       \href{https://developer.nvidia.com/cuda-zone}{Cuda},
                        \href{https://www.sourceware.org/gdb/}{gdb},
-                       \href{https://valgrind.org/}{valgrind},
-                       \href{https://git-scm.com/}{git}, Autotools, \href{https://cmake.org/}{CMake}/CTest/CPack
+                       \href{https://git-scm.com/}{git},
+                       \href{https://www.mpi-forum.org/}{MPI},
+                       \href{https://www.kernel.org/doc/html/v4.19/vm/numa.html}{Numa},
+                       \href{https://pm.bsc.es/ompss-2}{OmpSs-2},
+                       \href{https://www.khronos.org/api/opencl}{OpenCL},
+                       \href{https://www.openmp.org/}{OpenMP},
+                       \href{https://perf.wiki.kernel.org/index.php/Main_Page}{Perf} (\href{https://icl.utk.edu/papi/}{PAPI}),
+                       \href{https://www.qt.io/}{Qt},
+                       \href{https://slurm.schedmd.com/}{slurm},
+                       \href{https://valgrind.org/}{valgrind}
 
-                       Basic-Intermediate: \href{https://www.openacc.org/}{OpenACC},
+                       Basic-Intermediate:
+                       \href{https://www.docker.com/}{Docker},
                        \href{https://github.com/features/actions}{Github Actions},
-                       \href{https://www.travis-ci.com/}{Travis},
-                       \href{https://grpc.io/}{grpc},
                        \href{https://google.github.io/googletest/}{GoogleTest},
-                       \href{https://www.docker.com/}{Docker}, \href{https://www.qemu.org/}{QEMU}/\href{https://www.linux-kvm.org/page/Main_Page}{KVM}. \\
+                       \href{https://grpc.io/}{grpc},
+                       \href{https://www.openacc.org/}{OpenACC},
+                       \href{https://www.qemu.org/}{QEMU}/\href{https://www.linux-kvm.org/page/Main_Page}{KVM},
+                       \href{https://www.travis-ci.com/}{Travis} \\
 \end{tabularx}
 
 % ----------------------------------------------------------------------------------------
@@ -259,4 +268,5 @@ challenging architectures, frameworks and systems.
 %%% Local Variables:
 %%% mode: latex
 %%% TeX-master: t
+%%% TeX-engine: luatex
 %%% End:
