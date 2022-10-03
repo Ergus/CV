@@ -11,7 +11,7 @@ jobs:
         uses: dante-ev/latex-action@latest
         with:
           root_file: CV.tex
-          compiler: pdflatex
+          compiler: lualatex
           args: -interaction=nonstopmode -shell-escape
       - name: biber CV
         uses: dante-ev/latex-action@latest
@@ -23,7 +23,7 @@ jobs:
         uses: dante-ev/latex-action@latest
         with:
           root_file: CV.tex
-          compiler: pdflatex
+          compiler: lualatex
           args: -interaction=nonstopmode -shell-escape
       - name: Upload
         uses: actions/upload-artifact@v1
