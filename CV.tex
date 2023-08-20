@@ -85,28 +85,35 @@
 \begin{tabularx}{\linewidth}{@{} C @{}}
   \Huge{Jimmy Aguilar Mena} \\
   Barcelona, Spain\\[7.5pt]
-  \href{https://github.com/Ergus}{\raisebox{-0.05\height}\faGithub~Ergus} \ $|$ \
-  \href{https://https://www.linkedin.com/in/jimmy-aguilar-mena-237063167/}{\raisebox{-0.05\height}\faLinkedin~Jimmy Aguilar Mena} \ $|$ \
-  \href{https://scholar.google.es/citations?user=f_W11w8AAAAJ\&hl=es}{\raisebox{-0.05\height}\faGraduationCap~Jimmy Aguilar Mena} \ $|$ \
-  \href{https://join.skype.com/invite/cBUIu90wgsE8}{\raisebox{-0.05\height}\faSkype~kratsbinovish} \ $|$ \
-  \href{mailto:kratsbinovish@gmail.com}{\raisebox{-0.05\height}\faEnvelope~kratsbinovish@gmail.com} \ $|$ \
-  \href{tel:+34611494825}{\raisebox{-0.05\height}\faMobile~+34.611.494.825} \ $|$ \
+  \href{https://github.com/Ergus}{\raisebox{-0.05\height}\faGithub~Ergus} \
+  $|$ \ \href{https://https://www.linkedin.com/in/jimmy-aguilar-mena-237063167/}{\raisebox{-0.05\height}\faLinkedin~Jimmy Aguilar Mena} \
+  $|$ \ \href{https://scholar.google.es/citations?user=f_W11w8AAAAJ\&hl=es}{\raisebox{-0.05\height}\faGraduationCap~Jimmy Aguilar Mena} \
+  %$|$ \ \href{https://join.skype.com/invite/cBUIu90wgsE8}{\raisebox{-0.05\height}\faSkype~kratsbinovish} \
+  $|$ \ \href{mailto:aguilarmenajimmy@gmail.com}{\raisebox{-0.05\height}\faEnvelope~aguilarmenajimmy@gmail.com} \
+  %$|$ \ \href{tel:+34611494825}{\raisebox{-0.05\height}\faMobile~+34.611.494.825} \ $|$ \
   \faPassport~Spanish \\
 \end{tabularx}
 
 
 % Interests/ Keywords/ Summary
 \section{Summary}
-PhD in High Performance Computing Engineer with more than 10 years developing hybrid
- parallel applications on multiple architectures, languages and infrastructure.
- Open Source contributor and GNU/Linux+Emacs big fan.
+Senior developer with a PhD in Computers Architecture and High
+performance computing (HPC) with over than 12 years developing and
+optimizing hybrid parallel applications for multiple architectures,
+languages and infrastructures. Developed the task based programming
+model
+\href{https://github.com/bsc-pm/ompss-2-cluster-releases}{OmpSs2@Cluster}
+and the instrument based profiler for C++ parallel applications
+\href{https://github.com/Ergus/ExtraeWin}{ExtraeWin}. Regular
+contributor to the Emacs Project and maintainer of some packages
+(\href{https://elpa.gnu.org/packages/gtags-mode.html}{gtags-mode}).
 
 % ----------------------------------------------------------------------------------------
 \section{Work Experience}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
   \textbf{General Quant Developer Associate XVA Group} & \hfill 2023-today \\
-  \href{https://www.ust.com/es}{UST} External Consultant @ (\href{https://www.bbva.es/}{BBVA} Bank) &  \\
+  \href{https://www.ust.com/es}{UST} Senior Developer External Consultant @ (\href{https://www.bbva.es/}{BBVA} Bank) &  \\
 
   \multicolumn{2}{@{}X@{}}{
   \begin{minipage}[t]{\linewidth}
@@ -115,10 +122,11 @@ PhD in High Performance Computing Engineer with more than 10 years developing hy
       \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
           \item[--] Design and implement risk valuation models (CVA, FVA)
               for high performance shared and distributed heterogeneous parallel
-              architectures. Results in more maintainable code usually ~1.5x-3x faster than original.
-          \item[--] Profile, instrument and benchmark existing code to detect
-              issues and optimization opportunities and modernize executions benefit
-              from modern advanced infrastructures.
+              architectures. Resulting in a more maintainable code usually ~1.5x-3x
+              faster than original.
+          \item[--] Profile, instrument and benchmark to detect issues and
+              optimization opportunities and modernize executions benefit from
+              modern advanced infrastructures.
           \item[--] Additionally, mentored junior developers resulting in an 80\% decrease in
               turnaround time for development projects.
       \end{itemize}
@@ -138,17 +146,23 @@ PhD in High Performance Computing Engineer with more than 10 years developing hy
       \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
           \item[--] Design and develop a high performance parallel task based
               programming model and its runtime system for distributed memory architectures
-              (\href{https://github.com/bsc-pm/ompss-2-cluster-releases}{OmpSs2}+\href{https://github.com/bsc-pm/nanos6-cluster}{Nanos6@Cluster})
-              from scratch.
+              (\href{https://github.com/bsc-pm/ompss-2-cluster-releases}{OmpSs2@Cluster}
+              +\href{https://github.com/bsc-pm/nanos6-cluster}{Nanos6@Cluster})
+              from scratch. (PHD Thesis)
           \item[--] Hybrid Parallel Programming (distributed/shared memory,
               multi-process, multi-threading, task programming model, IPC, lock-free,
-              non-blocking). Parallel Application benchmark, profile, analysis,
-              instrumentation and optimization tools.
-          \item[--] Extend the \href{https://tools.bsc.es/extrae}{Extrae} parallel profiler to provide more accurate traces for our model.
+              non-blocking).
+          \item[--]  Application benchmark, profile, analysis,
+              instrumentation and optimization tools. Extend the \href{https://tools.bsc.es/extrae}{Extrae}
+              profiler to provide more accurate traces for the
+              \href{https://github.com/bsc-pm/ompss-2-cluster-releases}{OmpSs2} programming model.
           \item[--] Language interoperability programming (C/\CC/Fortran/Python).
               System aware application development (hwloc, Slurm API, Numa, POSIX, jemalloc)
-              Application and library development test, debug and profile automation.
-          \item[--] Participation in international projects:
+              Application and library development test, debug and profile automation. Modify the
+              \href{https://pm.bsc.es/mcxx}{mercurium} compiler to support the
+              \href{https://github.com/bsc-pm/ompss-2-cluster-releases}{OmpSs2@Custer}
+              requirements for C,\CC and Fortran.
+          \item[--] Participation in European projects:
               \href{https://www.deep-projects.eu/}{DEEP-SEA},
               \href{https://euroexa.eu/}{EuroEXA},
               \href{https://legato-project.eu/}{LeGaTo},
@@ -303,6 +317,7 @@ PhD in High Performance Computing Engineer with more than 10 years developing hy
                        \href{https://git-scm.com/}{git},
                        \href{https://developers.google.com/protocol-buffers}{Google Protobuf},
                        \href{https://github.com/google/googletest}{Google Test},
+                       \href{https://www.intel.com/content/www/us/en/developer/tools/oneapi/onetbb.html}{Intel TBB},
                        IPC\,(Posix, Sysv,
                        \href{https://lwn.net/Articles/405284/}{CMA},
                        \href{https://knem.gitlabpages.inria.fr/}{KNEM},
