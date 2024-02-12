@@ -120,15 +120,22 @@ contributor to the Emacs Project and maintainer of some packages
 
   \begin{minipage}[t]{\linewidth}
       \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
-          \item[--] Design and implement risk valuation models (CVA, FVA)
-              for high performance shared and distributed heterogeneous parallel
-              architectures. Resulting in a more maintainable code usually ~1.5x-3x
-              faster than original.
-          \item[--] Profile, instrument and benchmark to detect issues and
-              optimization opportunities and modernize executions benefit from
-              modern advanced infrastructures.
-          \item[--] Additionally, mentored junior developers resulting in an 80\% decrease in
-              turnaround time for development projects.
+          \item[--] Design and implement models for high performance shared
+              and distributed heterogeneous parallel architectures from
+              prototype to production.
+          \item[--] Profile, benchmark and instrument applications to detect
+              correctness and performance issues; modernize executions for modern
+              architectures and improve failure traceability and recovery.
+          \item[--] Mentor junior developers to encourage the use of correct design patterns,
+              good practices, CI, TDD. Common tools like Coverage reports, logging,
+              debuggers, hardware counters. And optimization techniques like cache friendly
+              or auto-vectorizable code.
+          \item[--] Use \href{https://www.ibm.com/es-es/products/analytics-workload-management}{Symphony},
+              \href{https://developers.google.com/protocol-buffers}{Google Protobuf}, .NET, modern C++,
+              \href{https://learn.microsoft.com/en-us/dotnet/api/microsoft.office.interop.excel}{Excel Interop},
+              \href{https://grpc.io/}{grpc} and algebra libraries like
+              \href{https://www.intel.com/content/www/us/en/developer/tools/oneapi/onemkl.html}{oneMKL}
+              and \href{https://eigen.tuxfamily.org/index.php}{Eigen}.
       \end{itemize}
   \end{minipage}
   }
@@ -146,22 +153,27 @@ contributor to the Emacs Project and maintainer of some packages
       \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
           \item[--] Design and develop a high performance parallel task based
               programming model and its runtime system for distributed memory architectures
-              (\href{https://github.com/bsc-pm/ompss-2-cluster-releases}{OmpSs2@Cluster}
+              (\href{https://github.com/bsc-pm/ompss-2-cluster-releases}{OmpSs2@Cluster}\
               +\href{https://github.com/bsc-pm/nanos6-cluster}{Nanos6@Cluster})
               from scratch. (PHD Thesis)
           \item[--] Hybrid Parallel Programming (distributed/shared memory,
-              multi-process, multi-threading, task programming model, IPC, lock-free,
-              non-blocking).
+              multi-process (MPI), multi-threading (pthreads, OpenMP), task programming model
+              (OmpSs2, Legion), IPC, lock-free, non-blocking).
           \item[--]  Application benchmark, profile, analysis,
               instrumentation and optimization tools. Extend the \href{https://tools.bsc.es/extrae}{Extrae}
               profiler to provide more accurate traces for the
               \href{https://github.com/bsc-pm/ompss-2-cluster-releases}{OmpSs2} programming model.
           \item[--] Language interoperability programming (C/\CC/Fortran/Python).
               System aware application development (hwloc, Slurm API, Numa, POSIX, jemalloc)
-              Application and library development test, debug and profile automation. Modify the
-              \href{https://pm.bsc.es/mcxx}{mercurium} compiler to support the
-              \href{https://github.com/bsc-pm/ompss-2-cluster-releases}{OmpSs2@Custer}
-              requirements for C,\CC and Fortran.
+              Application and library development test, debug and profile automation.
+          \item[--] Modify the \href{https://pm.bsc.es/mcxx}{mercurium} compiler to support the
+              \href{https://github.com/bsc-pm/ompss-2-cluster-releases}{OmpSs2@Custer} requirements
+              for C,\CC\,and Fortran.
+          \item[--] Integration the Nanos6 runtime with the \href{https://slurm.schedmd.com/}{Slurm} resources
+              manager's API to enable malleability in applications using the OmpSs2@Cluster programming model.
+          \item[--] Exploit the \href{https://www.ibm.com/docs/en/gpfs/4.1.0.4}{GPFS}
+              parallel file-system to enable efficient parallel applications checkpoint and restart for
+              OmpSs2@Custer programming model.
           \item[--] Participation in European projects:
               \href{https://www.deep-projects.eu/}{DEEP-SEA},
               \href{https://euroexa.eu/}{EuroEXA},
@@ -310,8 +322,10 @@ contributor to the Emacs Project and maintainer of some packages
                        Autotools,
                        \href{https://cmake.org/}{CMake}/CTest/CPack,
                        \href{https://developer.nvidia.com/cuda-zone}{Cuda},
+                       \href{https://dwarfstd.org/}{DWARF}+\href{https://www.prevanders.net/libdwarfdoc/}{libDWARF},
                        \href{https://www.docker.com/}{Docker},
                        \href{https://doxygen.nl/}{Doxygen},
+                       \href{https://man7.org/linux/man-pages/man5/elf.5.html}{ELF},
                        \href{https://tools.bsc.es/extrae}{Extrae}/\href{https://tools.bsc.es/paraver}{Paraver},
                        \href{https://www.sourceware.org/gdb/}{gdb},
                        \href{https://git-scm.com/}{git},
