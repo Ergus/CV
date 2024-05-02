@@ -69,6 +69,7 @@
 
 % Write C++ ad \CC
 \def\CC{{C\nolinebreak[4]\hspace{-.05em}\raisebox{.2ex}{++}}}
+\def\CS{{C\nolinebreak[4]\hspace{-.05em}\#}}
 
 % ----------------------------------------------------------------------------------------
 %	BEGIN DOCUMENT
@@ -120,22 +121,25 @@ contributor to the Emacs Project and maintainer of some packages
 
   \begin{minipage}[t]{\linewidth}
       \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
-          \item[--] Design and implement models for high performance shared
-              and distributed heterogeneous parallel architectures from
+          \item[--] Design, implement and optimize numerical models for high
+              performance shared and distributed heterogeneous parallel architectures from
               prototype to production.
           \item[--] Profile, benchmark and instrument applications to detect
               correctness and performance issues; modernize executions for modern
               architectures and improve failure traceability and recovery.
-          \item[--] Mentor junior developers to encourage the use of correct design patterns,
+          \item[--] Mentor junior Quant developers to encourage the use of correct design patterns,
               good practices, CI, TDD. Common tools like Coverage reports, logging,
-              debuggers, hardware counters. And optimization techniques like cache friendly
-              or auto-vectorizable code.
+              debuggers, hardware counters. And optimization techniques like cache friendly,
+              compiler friendly, and auto-vectorizable code.
           \item[--] Use \href{https://www.ibm.com/es-es/products/analytics-workload-management}{Symphony},
-              \href{https://developers.google.com/protocol-buffers}{Google Protobuf}, .NET, modern C++,
+              \href{https://developers.google.com/protocol-buffers}{Google Protobuf}, .NET, C++-17/20,
               \href{https://learn.microsoft.com/en-us/dotnet/api/microsoft.office.interop.excel}{Excel Interop},
-              \href{https://grpc.io/}{grpc} and algebra libraries like
-              \href{https://www.intel.com/content/www/us/en/developer/tools/oneapi/onemkl.html}{oneMKL}
-              and \href{https://eigen.tuxfamily.org/index.php}{Eigen}.
+              \href{https://grpc.io/}{grpc}, linear algebra libraries like
+              \href{https://www.intel.com/content/www/us/en/developer/tools/oneapi/onemkl.html}{oneMKL},
+              \href{https://eigen.tuxfamily.org/index.php}{Eigen}, \href{https://arma.sourceforge.net/}{Armadillo},
+              \href{https://www.tensorflow.org/lite/api_docs/cc}{Tensorflow Lite} (C++ api),
+              \href{https://nvidia.github.io/cccl/thrust/}{Thrust} and
+              \href{https://www.intel.com/content/www/us/en/developer/tools/oneapi/onetbb.html}{Intel TBB}.
       \end{itemize}
   \end{minipage}
   }
@@ -156,9 +160,9 @@ contributor to the Emacs Project and maintainer of some packages
               (\href{https://github.com/bsc-pm/ompss-2-cluster-releases}{OmpSs2@Cluster}\
               +\href{https://github.com/bsc-pm/nanos6-cluster}{Nanos6@Cluster})
               from scratch. (PHD Thesis)
-          \item[--] Hybrid Parallel Programming (distributed/shared memory,
+          \item[--] Hybrid Parallel Programming with distributed/shared memory,
               multi-process (MPI), multi-threading (pthreads, OpenMP), task programming model
-              (OmpSs2, Legion), IPC, lock-free, non-blocking).
+              (OmpSs2, Legion), IPC, lock-free, non-blocking.
           \item[--]  Application benchmark, profile, analysis,
               instrumentation and optimization tools. Extend the \href{https://tools.bsc.es/extrae}{Extrae}
               profiler to provide more accurate traces for the
@@ -207,11 +211,11 @@ contributor to the Emacs Project and maintainer of some packages
 \end{tabularx}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
-  \textbf{Assistant professor of Numerical Methods and Elemental Physics} & \hfill 2011--2014 \\
+  \textbf{Assistant professor of Numerical Methods and Differential Equations} & \hfill 2011--2014 \\
 
   \multicolumn{2}{@{}X@{}}{
   \begin{minipage}[t]{\linewidth}
-      Agrarian University of Havana
+      Agrarian University
       Department of Mathematics and Physics.
 
       \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
@@ -237,7 +241,7 @@ contributor to the Emacs Project and maintainer of some packages
   2017--2022 & \textbf{PhD on Computers Architecture}
                \href{https://www.ac.upc.edu/en/academics/ph-d/ph-d-programme-by-computer-architecture}{[Link]}
 
-               Universitat Polit\`ecnica de Catalunya (\href{https://www.upc.edu/en}{UPC}).
+               Universitat Politecnica de Catalunya (\href{https://www.upc.edu/en}{UPC}).
                Barcelona, Spain
 
                \textbf{Thesis:} Methodology for malleable applications on distributed memory systems.
@@ -263,7 +267,10 @@ contributor to the Emacs Project and maintainer of some packages
                \href{https://backend.mhpc.sissa.it/sites/default/files/2021-02/JimmyAguilarMena.pdf}{[Link]}
 
                \textbf{Brief description:} Implement an hybrid master-slave system that exploits efficiently
-               the hardware capabilities using MPI, pthreads and GPGPU programming with
+               the hardware capabilities to accelerate computation using MPI, pthreads and GPGPU
+               (\href{https://developer.nvidia.com/cuda-zone}{Cuda},
+               \href{https://www.khronos.org/api/opencl}{OpenCL},
+               \href{https://icl.utk.edu/magma/}{Magma}) programming with
                simplified api and interface for users.
   \\
 \end{tabularx}
@@ -299,18 +306,28 @@ contributor to the Emacs Project and maintainer of some packages
 % ----------------------------------------------------------------------------------------
 \section{Skills}
 \begin{tabularx}{\linewidth}{@{}l X@{}}
-  Language & Spanish (Native), English (Advanced), Italian (Basic), Catalan (Basic)\\
-  Operative System & GNU/Linux (User and kernel space development) BSD (User space development), \\
-  Programming & \textbf{Advanced}: \href{https://www.gnu.org/software/bash/}{Bash},
-                C\,(99--17), \CC\,(98--20, STL, \href{https://www.boost.org/}{Boost}), Fortran, Lisp,
-                \href{https://www.freepascal.org/}{Pascal}, PHP,
+  Language & Spanish (Native), English (Advanced), Italian (Basic)\\
+  Operative System & GNU/Linux (User and kernel space development), BSD (User space development), \\
+  Programming & \textbf{Advanced}:
+                \href{https://www.gnu.org/software/bash/}{Bash},
+                C\,(99--17), \CC\,(98--20, STL, \href{https://www.boost.org/}{Boost}),
+                \href{https://developer.nvidia.com/cuda-zone}{Cuda}
+                (\href{https://docs.nvidia.com/cuda/parallel-thread-execution/index.html}{PTX},
+                \href{https://nvidia.github.io/cccl/thrust/}{Thrust}, \href{https://developer.nvidia.com/cublas}{cuBLAS}),
+                Fortran,
+                \href{https://www.intel.com/content/www/us/en/developer/tools/oneapi/onetbb.html}{Intel TBB},
+                Lisp,
+                \href{https://www.mpi-forum.org/}{MPI},
+                \href{https://www.khronos.org/api/opencl}{OpenCL},
+                \href{https://www.openmp.org/}{OpenMP},
                 Python\,(\href{https://numpy.org/}{numpy},
                 \href{https://matplotlib.org/}{matplotlib},
                 \href{https://pandas.pydata.org/}{pandas},
                 \href{https://docs.python.org/3/c-api/index.html}{python c-api},
-                \href{https://scipy.org/}{SciPy})
+                \href{https://scipy.org/}{SciPy}, \href{https://www.tensorflow.org/}{TensorFlow}),
 
-                \textbf{Basic-Intermediate}: Java,
+                \textbf{Basic-Intermediate}:
+                \CS,
                 \href{https://www.perl.org/}{Perl},
                 \href{https://www.rust-lang.org/}{Rust},
                 SQL,
@@ -321,29 +338,26 @@ contributor to the Emacs Project and maintainer of some packages
   Other Technologies & \textbf{Advanced}:
                        Autotools,
                        \href{https://cmake.org/}{CMake}/CTest/CPack,
-                       \href{https://developer.nvidia.com/cuda-zone}{Cuda},
-                       \href{https://dwarfstd.org/}{DWARF}+\href{https://www.prevanders.net/libdwarfdoc/}{libDWARF},
                        \href{https://www.docker.com/}{Docker},
                        \href{https://doxygen.nl/}{Doxygen},
+                       %\href{https://www.dyninst.org/}{Dyninst},
                        \href{https://man7.org/linux/man-pages/man5/elf.5.html}{ELF},
+                       \href{https://dwarfstd.org/}{DWARF}+\href{https://www.prevanders.net/libdwarfdoc/}{libDWARF},
                        \href{https://tools.bsc.es/extrae}{Extrae}/\href{https://tools.bsc.es/paraver}{Paraver},
                        \href{https://www.sourceware.org/gdb/}{gdb},
                        \href{https://git-scm.com/}{git},
                        \href{https://developers.google.com/protocol-buffers}{Google Protobuf},
                        \href{https://github.com/google/googletest}{Google Test},
-                       \href{https://www.intel.com/content/www/us/en/developer/tools/oneapi/onetbb.html}{Intel TBB},
                        IPC\,(Posix, Sysv,
                        \href{https://lwn.net/Articles/405284/}{CMA},
                        \href{https://knem.gitlabpages.inria.fr/}{KNEM},
                        \href{https://github.com/hpc/xpmem}{XPMEM}),
-                       \href{https://www.mpi-forum.org/}{MPI},
                        \href{https://www.kernel.org/doc/html/v4.19/vm/numa.html}{Numa},
                        \href{https://pm.bsc.es/ompss-2}{OmpSs-2},
-                       \href{https://www.khronos.org/api/opencl}{OpenCL},
-                       \href{https://www.openmp.org/}{OpenMP},
+
                        \href{https://perf.wiki.kernel.org/index.php/Main_Page}{Perf}/\href{https://icl.utk.edu/papi/}{PAPI},
                        \href{https://www.qt.io/}{Qt (QtWidget/QML)},
-                       \href{https://slurm.schedmd.com/}{slurm},
+                       \href{https://slurm.schedmd.com/}{Slurm}/\href{https://slurm.schedmd.com/rest.html}{Slurm API},
                        \href{https://valgrind.org/}{valgrind}
 
                        \textbf{Basic-Intermediate}:
