@@ -100,16 +100,16 @@
 \section{Summary}
 
 Senior software developer with a PhD in Computer Architecture and High
-Performance Computing (HPC), and over 12 years of expertise in
+Performance Computing (HPC), and over 13 years of expertise in
 designing, developing, and optimizing hybrid parallel applications for
 a range of architectures, languages, and infrastructures. Key
 contributions include developing the task-based programming model
 \href{https://github.com/bsc-pm/ompss-2-cluster-releases}{OmpSs2@Cluster}
-and the instrumentation-based profiler
-\href{https://github.com/Ergus/ExtraeWin}{ExtraeWin} for C++ parallel
-applications. Actively involved in open-source development as a
-regular contributor to the Emacs Project and maintainer of several
-packages, including
+and the instrumentation-based profilers for parallel applications:
+\href{https://github.com/Ergus/ExtraeWin}{ExtraeWin} (\CC) and
+\href{https://github.com/Ergus/extrae-rs}{extrae-rs} (Rust). Actively
+involved in open-source development as a regular contributor to the
+Emacs Project and maintainer of several packages, including
 \href{https://elpa.gnu.org/packages/gtags-mode.html}{gtags-mode}.
 
 % ----------------------------------------------------------------------------------------
@@ -130,7 +130,8 @@ packages, including
               \href{https://www.rust-lang.org/}{Rust},
               \href{https://developer.nvidia.com/nsight-systems}{Nsight Systems},
               \href{https://developer.nvidia.com/nsight-compute}{Nsight Compute},
-              \href{https://aws.amazon.com/}{AWS}.
+              \href{https://aws.amazon.com/}{AWS},
+              \href{https://www.docker.com/}{Docker}.
       \end{itemize}
   \end{minipage}
   }
@@ -156,11 +157,13 @@ packages, including
               debuggers, hardware counters. And optimization techniques like cache friendly,
               compiler friendly, and auto-vectorizable code.
           \item[--] Use \href{https://www.ibm.com/es-es/products/analytics-workload-management}{Symphony},
+              \href{https://www.docker.com/}{Docker},
               \href{https://developers.google.com/protocol-buffers}{Google Protobuf}, .NET, C++-17/20,
               \href{https://learn.microsoft.com/en-us/dotnet/api/microsoft.office.interop.excel}{Excel Interop},
+              \href{https://www.dpdk.org/}{DPDK},
               \href{https://grpc.io/}{grpc}, linear algebra libraries like
               \href{https://www.intel.com/content/www/us/en/developer/tools/oneapi/onemkl.html}{oneMKL},
-              \href{https://eigen.tuxfamily.org/index.php}{Eigen}, \href{https://arma.sourceforge.net/}{Armadillo},
+              \href{https://eigen.tuxfamily.org/index.php}{Eigen},
               \href{https://www.tensorflow.org/lite/api_docs/cc}{Tensorflow Lite} (C++ api),
               \href{https://nvidia.github.io/cccl/thrust/}{Thrust} and
               \href{https://www.intel.com/content/www/us/en/developer/tools/oneapi/onetbb.html}{Intel TBB}.
@@ -181,7 +184,7 @@ packages, including
       \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
           \item[--] Design and develop a high performance parallel task based
               programming model and its runtime system for distributed memory architectures
-              (\href{https://github.com/bsc-pm/ompss-2-cluster-releases}{OmpSs2@Cluster}\
+              (\href{https://github.com/bsc-pm/ompss-2-cluster-releases}{OmpSs2@Cluster}%
               +\href{https://github.com/bsc-pm/nanos6-cluster}{Nanos6@Cluster})
               from scratch. (PHD Thesis)
           \item[--] Hybrid Parallel Programming with distributed/shared memory,
@@ -332,9 +335,9 @@ packages, including
 \begin{tabularx}{\linewidth}{@{}l X@{}}
   Language & Spanish (Native), English (Advanced)\\
   Operative System & GNU/Linux (User and kernel space development), BSD (User space development), \\
-  Programming & \textbf{Advanced}:
-                \href{https://www.gnu.org/software/bash/}{Bash},
+  Programming & \href{https://www.gnu.org/software/bash/}{Bash},
                 C\,(99--17), \CC\,(98--20, STL, \href{https://www.boost.org/}{Boost}),
+                \CS,
                 \href{https://developer.nvidia.com/cuda-zone}{Cuda}
                 (\href{https://docs.nvidia.com/cuda/parallel-thread-execution/index.html}{PTX},
                 \href{https://nvidia.github.io/cccl/thrust/}{Thrust},
@@ -350,20 +353,18 @@ packages, including
                 \href{https://pandas.pydata.org/}{pandas},
                 \href{https://docs.python.org/3/c-api/index.html}{python c-api},
                 \href{https://scipy.org/}{SciPy}, \href{https://www.tensorflow.org/}{TensorFlow}),
+                \href{https://www.rust-lang.org/}{Rust} \\
 
-                \textbf{Basic-Intermediate}:
-                \CS,
-                \href{https://www.perl.org/}{Perl},
-                \href{https://www.rust-lang.org/}{Rust},
-                SQL,
-                (\href{https://mariadb.org/}{MariaDB},
-                \href{https://www.postgresql.org/}{PostgreSQL} and
-                \href{https://www.sqlite.org/index.html}{SQLite}), Visual Basic  \\
+                % \textbf{Basic-Intermediate}:
+                % \CS,
+                % \href{https://www.perl.org/}{Perl},
+                % SQL,
+                % (\href{https://mariadb.org/}{MariaDB},
+                % \href{https://www.postgresql.org/}{PostgreSQL} and
+                % \href{https://www.sqlite.org/index.html}{SQLite}), Visual Basic  \\
 
-  Other Technologies & \textbf{Advanced}:
-                       Autotools,
+  Other Technologies & Autotools,
                        \href{https://cmake.org/}{CMake}/CTest/CPack,
-                       \href{https://www.docker.com/}{Docker},
                        \href{https://doxygen.nl/}{Doxygen},
                        %\href{https://www.dyninst.org/}{Dyninst},
                        \href{https://man7.org/linux/man-pages/man5/elf.5.html}{ELF},
@@ -371,29 +372,26 @@ packages, including
                        \href{https://tools.bsc.es/extrae}{Extrae}/\href{https://tools.bsc.es/paraver}{Paraver},
                        \href{https://www.sourceware.org/gdb/}{gdb},
                        \href{https://git-scm.com/}{git},
+                       \href{https://github.com/features/actions}{Github Actions},
                        \href{https://developers.google.com/protocol-buffers}{Google Protobuf},
                        \href{https://github.com/google/googletest}{Google Test},
+                       \href{https://grpc.io/}{grpc},
                        IPC\,(Posix, Sysv,
                        \href{https://lwn.net/Articles/405284/}{CMA},
                        \href{https://knem.gitlabpages.inria.fr/}{KNEM},
                        \href{https://github.com/hpc/xpmem}{XPMEM}),
                        \href{https://www.kernel.org/doc/html/v4.19/vm/numa.html}{Numa},
                        \href{https://pm.bsc.es/ompss-2}{OmpSs-2},
-
                        \href{https://perf.wiki.kernel.org/index.php/Main_Page}{Perf}/\href{https://icl.utk.edu/papi/}{PAPI},
-                       \href{https://www.qt.io/}{Qt (QtWidget/QML)},
                        \href{https://slurm.schedmd.com/}{Slurm}/\href{https://slurm.schedmd.com/rest.html}{Slurm API},
-                       \href{https://valgrind.org/}{valgrind}
-
-                       \textbf{Basic-Intermediate}:
-                       \href{https://github.com/features/actions}{Github Actions},
-                       \href{https://google.github.io/googletest/}{GoogleTest},
-                       \href{https://grpc.io/}{grpc},
+                       \href{https://valgrind.org/}{valgrind},
+                       \href{https://www.docker.com/}{Docker},
                        \href{https://www.jenkins.io/}{Jenkins},
                        \href{https://www.atlassian.com/es/software/jira}{Jira},
                        \href{https://kubernetes.io/}{Kubernetes},
                        \href{https://www.openacc.org/}{OpenACC},
                        \href{https://www.qemu.org/}{QEMU}/\href{https://www.linux-kvm.org/page/Main_Page}{KVM},
+                       \href{https://www.qt.io/}{Qt (QtWidget/QML)},
                        \href{https://www.travis-ci.com/}{Travis} \\
 \end{tabularx}
 
@@ -406,7 +404,7 @@ packages, including
 
 
 \vfill
-\center{\footnotesize Last updated: \today}
+\center{\footnotesize Last updated: October 30, 2024}
 
 \end{document}
 %%% Local Variables:
