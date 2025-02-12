@@ -1,4 +1,4 @@
-\documentclass[a4paper,11pt]{article}
+\documentclass[a4paper,10pt]{article}
 
 % ----------------------------------------------------------------------------------------
 %	FONT
@@ -100,7 +100,7 @@
 \section{Summary}
 
 Senior software developer with a PhD in Computer Architecture and High
-Performance Computing (HPC), and over 13 years of expertise in
+Performance Computing (HPC), and over 14 years of expertise in
 designing, developing, and optimizing hybrid parallel applications for
 a range of architectures, languages, and infrastructures. Key
 contributions include developing the task-based programming model
@@ -116,7 +116,7 @@ Emacs Project and maintainer of several packages, including
 \section{Work Experience}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
-  \textbf{Senior Software Developer (GPU)} & \hfill 08/2024-today \\
+  \textbf{Senior Performance Software Developer (GPU)} & \hfill 08/2024-12/2024 \\
   \href{https://www.datapelago.io/}{Datapelago} &  \\
 
   \multicolumn{2}{@{}X@{}}{
@@ -128,6 +128,7 @@ Emacs Project and maintainer of several packages, including
               for intensive data sets on single and multiple GPU configurations.
           \item[--] Use \href{https://developer.nvidia.com/cuda-zone}{Cuda},
               \href{https://www.rust-lang.org/}{Rust},
+              \href{https://docs.nvidia.com/cuda/nvrtc/}{NVRTC},
               \href{https://developer.nvidia.com/nsight-systems}{Nsight Systems},
               \href{https://developer.nvidia.com/nsight-compute}{Nsight Compute},
               \href{https://aws.amazon.com/}{AWS},
@@ -193,15 +194,20 @@ Emacs Project and maintainer of several packages, including
           \item[--]  Application benchmark, profile, analysis,
               instrumentation and optimization tools. Extend the \href{https://tools.bsc.es/extrae}{Extrae}
               profiler to provide more accurate traces for the
-              \href{https://github.com/bsc-pm/ompss-2-cluster-releases}{OmpSs2} programming model.
+              \href{https://github.com/bsc-pm/ompss-2-cluster-releases}{OmpSs2@Cluster} programming model.
           \item[--] Language interoperability programming (C/\CC/Fortran/Python).
-              System aware application development (hwloc, Slurm API, Numa, POSIX, jemalloc)
+              System aware application development (%
+              \href{https://www.open-mpi.org/projects/hwloc/}{hwloc},
+              \href{https://slurm.schedmd.com/rest.html}{Slurm API},
+              \href{https://man7.org/linux/man-pages/man3/numa.3.html}{Numa},
+              \href{https://jemalloc.net/}{jemalloc})
               Application and library development test, debug and profile automation.
           \item[--] Modify the \href{https://pm.bsc.es/mcxx}{mercurium} compiler to support the
               \href{https://github.com/bsc-pm/ompss-2-cluster-releases}{OmpSs2@Custer} requirements
               for C,\CC\,and Fortran.
           \item[--] Integration the Nanos6 runtime with the \href{https://slurm.schedmd.com/}{Slurm} resources
-              manager's API to enable malleability in applications using the OmpSs2@Cluster programming model.
+              manager's API to enable malleability in applications using the
+              \href{https://github.com/bsc-pm/ompss-2-cluster-releases}{OmpSs2@Cluster} programming model.
           \item[--] Exploit the \href{https://www.ibm.com/docs/en/gpfs/4.1.0.4}{GPFS}
               parallel file-system to enable efficient parallel applications checkpoint and restart for
               OmpSs2@Custer programming model.
@@ -238,7 +244,7 @@ Emacs Project and maintainer of several packages, including
 \end{tabularx}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
-  \textbf{Assistant professor of Numerical Methods and Differential Equations} & \hfill 09/2011--08/2014 \\
+  \textbf{Assistant professor of Numerical Methods and Differential Equations and Physics} & \hfill 09/2011--08/2014 \\
 
   \multicolumn{2}{@{}X@{}}{
   \begin{minipage}[t]{\linewidth}
@@ -246,17 +252,15 @@ Emacs Project and maintainer of several packages, including
       Department of Mathematics and Physics.
 
       \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
-          \item[--] Differential equations, Numerical methods and Physics II (Thermodynamics \& Electromagnetism)
-          \item[--] Python (\href{https://numpy.org/}{numpy},
+          \item[--] Use: Python (\href{https://numpy.org/}{numpy},
               \href{https://matplotlib.org/}{matplotlib},
               \href{https://scipy.org/}{scipy}),
               \CC (\href{https://netlib.org/lapack/}{BLAS/Lapack},
               \href{https://www.gnu.org/software/gsl/}{GSL}),
               \href{https://octave.org/}{Octave},
-              \href{https://maxima.sourceforge.io/}{Maxima}
-          \item[--] Software development for teaching and study convergence of different numerical
-              methods and dynamic systems with \href{https://doc.qt.io/qt-5.15/}{QT5},
-              \href{https://plplot.sourceforge.net/}{PLplot}.
+              \href{https://maxima.sourceforge.io/}{Maxima},
+              \href{https://doc.qt.io/qt-5.15/}{QT5},
+              \href{https://plplot.sourceforge.net/}{PLplot}
       \end{itemize}
   \end{minipage}
   }
@@ -404,7 +408,7 @@ Emacs Project and maintainer of several packages, including
 
 
 \vfill
-\center{\footnotesize Last updated: October 30, 2024}
+\center{\footnotesize Last updated: January 30, 2025}
 
 \end{document}
 %%% Local Variables:
